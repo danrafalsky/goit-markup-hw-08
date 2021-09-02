@@ -1,0 +1,123 @@
+// Заголовок
+
+.modal__title {
+  color: $text-color-first;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 12px 0px;
+  padding: 0px;
+}
+
+// Формы
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  color: $text-color-second;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.forms__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 4px 0px 10px;
+
+  &.comments {
+    margin-bottom: 20px;
+  }
+}
+
+.forms__input {
+  display: flex;
+  height: 40px;
+  border: $modal-input-border;
+  border-radius: 4px;
+  padding: 12px 12px 12px 42px;
+  transition: border 250ms $timing-function;
+  resize: none;
+
+  color: $text-color-first;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  &.comments {
+    height: 120px;
+    padding: 12px 16px;
+  }
+
+  &:focus-within {
+    border: 1px solid $chromatic-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $comments-textarea-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+  }
+}
+
+// Иконки Форм
+
+.forms__icons {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: $text-color-first;
+  transition: fill 250ms $timing-function;
+
+  .forms__input:focus + & {
+    fill: $chromatic-color;
+  }
+}
+
+// Кнопка "Отправить"
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $text-color-third;
+  background-color: $chromatic-color;
+  box-shadow: $submit-button-shadow;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $chromatic-color-hover;
+  }
+}

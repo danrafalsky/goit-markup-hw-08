@@ -1,0 +1,37 @@
+.our-team {
+  background-color: $bg-color-second;
+  letter-spacing: 0.03em;
+}
+
+.our-team__list {
+  display: flex;
+  justify-content: center;
+}
+
+.our-team__items {
+  background-color: $bg-color-first;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 30px;
+  padding-bottom: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.our-team__items--heading {
+  color: $heading-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin: 30px 0px 10px 0px;
+}
+
+.our-team__items--description {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}

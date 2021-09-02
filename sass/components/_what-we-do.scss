@@ -1,0 +1,39 @@
+.what-we-do {
+  background-color: $bg-color-first;
+}
+
+.what-we-do__list {
+  display: flex;
+  justify-content: center;
+}
+
+.what-we-do__items {
+  position: relative;
+  justify-content: center;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.what-we-do__items--overlay {
+  display: block;
+  position: absolute;
+  padding: 27px;
+  background-color: $bg-what-we-do-description;
+  bottom: 0px;
+  width: 100%;
+}
+
+.what-we-do__items--description {
+  display: block;
+  color: $text-color-third;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+}

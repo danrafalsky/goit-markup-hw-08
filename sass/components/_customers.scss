@@ -1,0 +1,39 @@
+.customers {
+  background-color: $bg-color-first;
+}
+
+.customers__list {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.customers__items {
+  display: inline-block;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.customers__links {
+  color: $icons-color;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $chromatic-color;
+  }
+}
+
+.customers__icon {
+  fill: currentColor;
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

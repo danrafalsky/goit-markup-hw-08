@@ -1,0 +1,27 @@
+// Переменные
+@import "./utils/variables";
+
+// Cтили тегов и глобальные селекторы
+@import "./utils/global";
+
+// Глобальные стили
+@import "./components/logo";
+@import "./components/social-network";
+@import "./components/header";
+@import "./components/footer";
+
+// Стили секций "Главная"
+@import "./components/hero";
+@import "./components/characteristics";
+@import "./components/what-we-do";
+@import "./components/our-team";
+@import "./components/customers";
+
+// Стили секций "Портфолио"
+@import "./components/filter-buttons";
+@import "./components/portfolio";
+
+// Модальное Окно
+@import "./components/modal";
+@import "./components/modal-content";
+@import "./components/modal-checkbox";

@@ -1,0 +1,46 @@
+/* Хроматические Цвета */
+$chromatic-color: #2196f3;
+$chromatic-color-hover: #188ce8;
+
+/* Цвета логотипов в Хедере и Футере */
+$logo-header: #000000;
+$logo-footer: #ffffff;
+
+/* Цвета теней и границ */
+$close-modal-border: rgba(0, 0, 0, 0.1);
+$button-shadow: rgba(0, 0, 0, 0.15);
+$filter-buttons-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+$header-border-color: #ececec;
+$portfolio-border-color: #eeeeee;
+$portfolio-items-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+$modal-input-border: 1px solid rgba(33, 33, 33, 0.2);
+$submit-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$footer-subscribe-input-border: 1px solid rgba(255, 255, 255, 0.3);
+$footer-subscribe-input-border-hover: 1px solid var($chromatic-color);
+
+/* Цвета ФОНОВ и ТЕКСТА */
+$invisible: rgba(0, 0, 0, 0);
+$icons-color: #afb1b8;
+$heading-color: #212121;
+$footer-kontakts-color: rgba(255, 255, 255, 0.6);
+$comments-textarea-color: rgba(117, 117, 117, 0.5);
+$footer-subscribe-textarea-color: rgba(255, 255, 255, 0.6);
+$bg-backdrop: rgba(0, 0, 0, 0.2);
+$modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$bg-what-we-do-description: rgba(47, 48, 58, 0.8);
+$bg-portfolio-items-overlay: rgba(33, 150, 243, 0.9);
+$bg-join-icons: rgba(255, 255, 255, 0.1);
+$bg-color-first: #ffffff;
+$bg-color-second: #f5f4fa;
+$bg-color-third: #2f303a;
+$bg-color-hero: rgba(47, 48, 58, 0.4);
+$bg-color-main: #e5e5e5;
+$text-color-first: #212121;
+$text-color-second: #757575;
+$text-color-third: #ffffff;
+
+/* Переход */
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

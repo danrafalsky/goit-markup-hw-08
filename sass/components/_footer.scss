@@ -1,0 +1,145 @@
+.page-footer {
+  display: flex;
+  background-color: $bg-color-third;
+  align-items: center;
+  padding: 60px 0px;
+}
+
+.page-footer__flexing {
+  display: flex;
+  align-items: baseline;
+}
+
+// Ссылки в Address
+
+.address__list {
+  margin-top: 20px;
+}
+
+.address__items {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+%items-address {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__items--location {
+  @extend %items-address;
+  color: $text-color-third;
+}
+
+.address__items--kontakts {
+  @extend %items-address;
+  color: $footer-kontakts-color;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $text-color-third;
+  }
+}
+
+// Заголовок
+
+.footer-heading {
+  color: $text-color-third;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0px 0px 20px 0px;
+}
+
+// Секция "Присоединяйтесь"
+
+.join {
+  display: inline;
+  margin-left: 70px;
+}
+
+// Секция "Подпишитесь"
+
+.subscribe-section {
+  display: block;
+  margin-left: auto;
+}
+
+.subscribe {
+  display: flex;
+}
+
+.subscribe__input {
+  display: flex;
+  border: $footer-subscribe-input-border;
+  box-sizing: border-box;
+  filter: drop-shadow($submit-button-shadow);
+  border-radius: 4px;
+  background-color: inherit;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  transition: border 250ms $timing-function;
+
+  color: $text-color-third;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  &::placeholder {
+    color: $footer-subscribe-textarea-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+}
+
+.subscribe__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-family: Roboto;
+  color: $text-color-third;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: $chromatic-color;
+  box-shadow: $submit-button-shadow;
+  border-radius: 4px;
+  margin-left: 12px;
+  padding: 0px;
+  border: none;
+  transition: background-color 250ms $timing-function;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $chromatic-color-hover;
+  }
+}
+
+.subscribe__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}

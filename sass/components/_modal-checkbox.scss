@@ -1,0 +1,48 @@
+.modal-checkbox-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-text {
+  align-items: center;
+  color: $text-color-second;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.checkbox-text a {
+  color: $chromatic-color;
+  font-style: normal;
+  text-decoration-line: underline;
+}
+
+.checkbox-icon {
+  box-shadow: inset 0px 0px 0px 2px $text-color-first;
+  border-radius: 2px;
+  fill: $invisible;
+  display: flex;
+  margin-right: 7px;
+  transition: fill 250ms $timing-function, box-shadow 250ms $timing-function;
+}
+
+.checkbox:checked + .checkbox-icon {
+  fill: $chromatic-color;
+  box-shadow: inset 0px 0px 0px 2px $chromatic-color;
+}
