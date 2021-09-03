@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="Домашнее задание №2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,33 +83,48 @@
     <header class="page-header">
         <!-- Навигационные ссылки -->
         <div class="container flexing-items">
-            <nav class="navigation">
-                <a class="logo-header" href="#" lang="en">Web<span>Studio</span></a>
-                <ul class="navigation__list">
-                    <li class="navigation__items">
-                        <a class="navigation__links active-page" href="./index.html">Студия</a></li>
-                    <li class="navigation__items">
-                        <a class="navigation__links" href="./portfolio.html">Портфолио</a></li>
-                    <li class="navigation__items">
-                        <a class="navigation__links" href="№">Контакты</a></li>
-                </ul>
-            </nav>
+            <a class="logo-header" href="#" lang="en">Web<span>Studio</span></a>
+            <button
+                type="button"
+                class="menu-button is-open"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button
+            >
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="close-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="open-menu" href="./images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
 
-            <!-- Контакты в Хедере -->
-            <ul class="header-kontakts__list">
-                <li class="header-kontakts__items"><a class="header-kontakts__links" href="#">
-                    <svg class="icon-mail" width="16" height="12">
-                        <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>
-                    info@devstudio.com
-                </a></li>
-                <li class="header-kontakts__items"><a class="header-kontakts__links" href="#">
-                    <svg class="icon-phone" width="10" height="16">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a></li>
-            </ul>
+            <div class="menu-container" id="menu-container" data-menu>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__items">
+                            <a class="navigation__links active-page" href="./index.html">Студия</a></li>
+                        <li class="navigation__items">
+                            <a class="navigation__links" href="./portfolio.html">Портфолио</a></li>
+                        <li class="navigation__items">
+                            <a class="navigation__links" href="№">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Контакты в Хедере -->
+                <ul class="header-kontakts__list">
+                    <li class="header-kontakts__items"><a class="header-kontakts__links" href="#">
+                        <svg class="icon-mail" width="16" height="12">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a></li>
+                    <li class="header-kontakts__items"><a class="header-kontakts__links" href="#">
+                        <svg class="icon-phone" width="10" height="16">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -430,6 +446,7 @@
             </section>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script>
         (() => {

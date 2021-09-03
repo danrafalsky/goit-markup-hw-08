@@ -7,6 +7,7 @@
   height: 100%;
   background-color: $bg-backdrop;
   transition: opacity 250ms $timing-function;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -22,17 +23,32 @@
 // Модальное Окно
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(100%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
+  position: relative;
+  top: 15px;
+  margin: auto;
+  width: 100%;
   border-radius: 4px;
+  padding: 40px;
   background-color: $bg-color-first;
   box-shadow: $modal-shadow;
   transition: transform 250ms $timing-function;
+
+  max-width: 450px;
+  height: 609px;
+
+  @media screen and (max-width: 767px) {
+    max-width: calc(100% - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(100%);
+
+    max-width: 528px;
+    height: 581px;
+  }
 }
 
 .close-modal {

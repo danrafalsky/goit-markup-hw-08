@@ -1,15 +1,29 @@
 %logo {
   font-family: "Raleway", sans-serif;
   color: $chromatic-color;
-  font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
   letter-spacing: 0.03em;
+
+  font-size: 24px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-header {
   @extend %logo;
-  padding: 24px 0px 25px;
+  padding: 16px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0px;
+  }
+
+  @media screen and (min-wudth: 1200px) {
+    padding: 24px 0px 25px;
+  }
 
   & span {
     color: $logo-header;
@@ -18,7 +32,6 @@
 
 .logo-footer {
   @extend %logo;
-
   & span {
     color: $logo-footer;
   }

@@ -5,9 +5,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $bg-color-third;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-section__button {
