@@ -13,11 +13,11 @@ body {
   }
 }
 
-// img {
-//   display: block;
-//   width: 100%;
-//   height: auto;
-// }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 a {
   font-family: "Roboto", sans-serif;
@@ -98,13 +98,14 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 50px;
 
   font-size: 28px;
   line-height: 1.18;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }

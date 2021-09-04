@@ -1,0 +1,50 @@
+.social-network__list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-network__items {
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+%links-socnet {
+  display: flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function;
+}
+
+.social-network__links {
+  @extend %links-socnet;
+  color: $icons-color;
+  background-color: $bg-color-first;
+
+  &:hover,
+  &:focus {
+    color: $text-color-third;
+    background-color: $chromatic-color;
+  }
+}
+
+.social-network__links--join {
+  @extend %links-socnet;
+  color: $text-color-third;
+  background-color: $bg-join-icons;
+
+  &:hover,
+  &:focus {
+    color: $text-color-third;
+    background-color: $chromatic-color;
+  }
+}
+
+.social-network__icons {
+  fill: currentColor;
+}

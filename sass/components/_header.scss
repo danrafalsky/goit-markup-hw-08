@@ -23,6 +23,7 @@
     padding: 48px 40px;
     top: 0px;
     left: -15px;
+    box-shadow: $modal-shadow;
     z-index: 1;
 
     &.is-open {
