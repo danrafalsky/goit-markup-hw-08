@@ -23,22 +23,18 @@
 // Модальное Окно
 
 .modal {
-  position: relative;
-  top: 15px;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(100%);
+  max-height: 609px;
   width: 100%;
+  max-width: 450px;
   border-radius: 4px;
   padding: 40px;
   background-color: $bg-color-first;
   box-shadow: $modal-shadow;
   transition: transform 250ms $timing-function;
-
-  max-width: 450px;
-
-  @media screen and (max-width: 767px) {
-    max-width: calc(100% - 30px);
-    min-height: 609px;
-  }
 
   @media screen and (min-width: 1200px) {
     position: absolute;
