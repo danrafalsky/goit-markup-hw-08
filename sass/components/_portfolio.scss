@@ -1,0 +1,125 @@
+.portfolio {
+  background-color: $bg-color-first;
+}
+
+.portfolio__container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 738px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 0px -30px 0px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0px -30px -30px 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin: 0px -30px -30px;
+  }
+}
+
+// @media screen and (min-width: 1200px)
+
+.portfolio__items {
+  display: flex;
+  background-color: $bg-color-first;
+  text-align: left;
+  transition: box-shadow 250ms $timing-function;
+  box-sizing: border-box;
+  border: 1px solid $portfolio-border-color;
+
+  margin: 0px 30px 30px 0px;
+  flex-basis: calc(100% - 15px);
+  max-width: 450px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+    max-width: 370px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: $portfolio-items-shadow;
+  }
+}
+
+// Карточки Портфолио
+
+.card-top {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-top__overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-portfolio-items-overlay;
+  transform: translatey(100%);
+  transition: transform 250ms $timing-function;
+
+  .portfolio__items:hover & {
+    transform: translatey(0px);
+  }
+}
+
+.card-top__overlay--text {
+  color: $text-color-third;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+}
+
+.card-bottom {
+  //   box-sizing: border-box;
+  padding: 20px 24px;
+  //   border: 1px solid $portfolio-border-color;
+  border-top: 0px;
+}
+
+.card-bottom__heading {
+  color: $text-color-first;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin: 0px 0px 4px 0px;
+}
+
+.card-bottom__description {
+  color: $text-color-second;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  margin: 0px;
+}

@@ -9,13 +9,11 @@
   margin: -15px;
 
   @media screen and (max-width: 1199px) {
-    display: flex;
     flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1200px) {
     margin: 0px;
-    display: flex;
     justify-content: center;
   }
 }
