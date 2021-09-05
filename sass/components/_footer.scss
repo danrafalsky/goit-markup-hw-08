@@ -133,18 +133,25 @@
   display: flex;
   flex-direction: column;
   margin: 60px auto 0px;
+  width: 100%;
 
   @media screen and (min-width: 1200px) {
     display: block;
+    width: auto;
+    margin: 0px;
     margin-left: auto;
-    margin: 0px 0px 0px auto;
   }
 }
 
 .subscribe {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    max-width: 450px;
+    margin: 0px auto;
+  }
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
@@ -157,7 +164,6 @@
   filter: drop-shadow($submit-button-shadow);
   border-radius: 4px;
   background-color: inherit;
-  width: 358px;
   height: 50px;
   padding: 15px;
   transition: border 250ms $timing-function;
@@ -178,6 +184,12 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
+  }
+
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 

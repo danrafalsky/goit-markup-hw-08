@@ -41,7 +41,7 @@
 
 .checkbox-icon {
   box-shadow: inset 0px 0px 0px 2px $text-color-first;
-  width: 16px;
+  min-width: 16px;
   border-radius: 2px;
   fill: $invisible;
   display: flex;

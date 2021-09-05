@@ -5,8 +5,7 @@
 .customers__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: -15px;
+  margin: 0px -15px -30px;
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -16,9 +15,8 @@
 
 .customers__items {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 15px;
+  margin: 0px 15px 30px;
   cursor: pointer;
   height: 92px;
   border: 1px solid $icons-color;
@@ -34,7 +32,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc((100% - 15px * 6) / 3);
+    flex-basis: calc((100% - 15px * 6) / 3);
   }
 
   @media screen and (min-width: 1200px) {
@@ -50,8 +48,13 @@
 }
 
 .customers__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $icons-color;
   transition: color 250ms $timing-function;
+  margin: 0px;
+  width: 100%;
 
   .customers__items:hover &,
   .customers__items:focus & {

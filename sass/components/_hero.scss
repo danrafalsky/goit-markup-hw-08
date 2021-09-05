@@ -1,6 +1,33 @@
-.hero-section {
+@mixin bg-hero($resolution) {
   background-image: linear-gradient(to right, $bg-color-hero, $bg-color-hero),
-    url("../images/bg-hero.jpg");
+    url($resolution);
+}
+
+.hero-section {
+  @include bg-hero("../images/bg-hero-480.jpg");
+
+  @media (min-resolution: 2dppx) {
+    @include bg-hero("../images/bg-hero-480@2x.jpg");
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    @include bg-hero("../images/bg-hero-768.jpg");
+    & {
+      @media (min-resolution: 2dppx) {
+        @include bg-hero("../images/bg-hero-768@2x.jpg");
+      }
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    @include bg-hero("../images/bg-hero-1200.jpg");
+    & {
+      @media (min-resolution: 2dppx) {
+        @include bg-hero("../images/bg-hero-1200@2x.jpg");
+      }
+    }
+  }
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

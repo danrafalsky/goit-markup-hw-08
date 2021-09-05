@@ -17,6 +17,7 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 a {
@@ -80,6 +81,7 @@ ul {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0px;
+  white-space: pre-wrap;
 
   font-size: 26px;
   line-height: 1.62;

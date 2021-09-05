@@ -34,10 +34,10 @@
   transition: transform 250ms $timing-function;
 
   max-width: 450px;
-  height: 609px;
 
   @media screen and (max-width: 767px) {
     max-width: calc(100% - 30px);
+    min-height: 609px;
   }
 
   @media screen and (min-width: 1200px) {
